@@ -1,0 +1,1222 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(155, 154, 154);
+    text-transform: capitalize;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 75px;
+    background-color: rgba(31, 30, 30, 0.6);
+    position: fixed;
+    z-index: 40;
+    overflow: auto;
+    top: 0;
+   
+}
+
+.imgHdr{
+    width: 150px;
+    height: 75px;
+    border-radius: 40px;
+    margin-left: 120px;
+    position: absolute;
+
+}
+
+.h2hdr{
+    position: absolute;
+    margin-left: 285px;
+    color: white;
+    font-size: 32px;
+    line-height: 20px;
+    float: left;
+}
+
+.ulhdr{
+    list-style: none;
+    float: right;
+    margin-right: 50px;
+
+}
+
+.ulhdr li{
+    display: inline-block;
+    margin-right: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+.ulhdr li a{
+    text-decoration: none;
+  
+}
+
+li:active  {
+    color: yellow;
+}
+
+.list_ul{
+    font-size: 18px;
+    color: white;
+    margin-top: 27px;
+    float: right;
+}
+
+.list_ul:active{
+    color: yellow;
+}
+
+.overlay{
+    width: 100%;
+    height: 675px;
+    position: absolute;
+    background-color: black;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.sec1{
+    background-image: url(../images/42358685_401.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 675px;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+}
+
+.name{
+    text-align: center;
+    margin-top: 337.5px;
+    font-size: 75px;
+    font-weight: 900;
+    color: rgb(41, 100, 209);
+    
+}
+
+.psec1{
+    text-align: center;
+    margin-top: -25px;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(41, 100, 209);
+}
+
+.btns{
+    text-align: center;
+}
+
+.btns button{
+    width: 175px;
+    height: 60px;
+    border-radius: 25px;
+    font-weight: 800;
+ 
+}
+
+.btn1{
+    color: blue;
+    font-size: 18px;
+}
+
+.btn2{
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+}
+
+.btns:hover button{
+    cursor: pointer;
+
+}
+
+.btn1:active{
+    font-weight: 300;
+}
+
+.btn2:active{
+    font-weight: 300;
+}
+/* ///////////sec22222222222222222////////////// */
+
+.sec2 {
+    width:100%;
+    height: 675px;
+    background-color: rgb(175, 171, 171);
+    margin-top:675px ;
+}
+
+.h2sec2{
+    text-align: center;
+    font-size: 40px;
+    padding-top:80px;
+    font-weight: 900;
+}
+
+.linesec2{
+    background-color: rgb(199, 43, 64);
+    width: 180px;
+    height: 3px;
+    margin: auto;
+    margin-top: -25px;
+    margin-bottom: 100px;
+
+}
+
+.prtsec2{
+    overflow: auto;
+    margin-left: 100px;
+
+}
+
+.clts , .brand , .sport{
+    border: 1px solid black;
+    width: 350px;
+    height: 250px;
+    float: left;
+    text-align: center;
+    margin-right: 50px;
+    border-radius: 25px;
+    position: relative; 
+    z-index: 3;  
+}
+
+.clts::before{
+    position: absolute;
+    opacity: 0;
+    content: "";
+
+    width: 0;
+    height: 0;
+   
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+.clts:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    border-radius:24px ;
+    background-color: rgba(0, 0, 0,0.5);
+    transition: 1s;
+
+}
+.sport::before{
+    position: absolute;
+    opacity: 0;
+    content: "";
+
+    width: 0;
+    height: 0;
+   
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+.sport:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    border-radius:24px ;
+    background-color: rgba(0, 0, 0,0.5);
+    transition: 1s;
+
+}
+.brand::before{
+    position: absolute;
+    opacity: 0;
+    content: "";
+
+    width: 0;
+    height: 0;
+   
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+.brand:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    border-radius:24px ;
+    background-color: rgba(0, 0, 0,0.5);
+    transition: 1s;
+
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* هنا فيه 3 افتر و بيفور بس لسه مخدناهمش  */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.icn1sec2 , .icn2sec2 , .icn3sec2{
+    font-size: 60px;
+    color: rgb(95, 135, 196);
+}
+
+.h2clts , .h2sport , .h2brand{
+    text-align: center;
+    font-weight: 900;
+}
+
+.pclts , .psport , .pbrand{
+    text-align: center;
+}
+
+.aclts , .asport , .abrand {
+    text-decoration: none;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(175, 171, 171);
+    border: none;
+}
+/* /////////////sec333333//////////////// */
+.sec3{
+    width:100%;
+    height: 795px;
+    background-color: rgb(175, 171, 171);
+    margin-top: -35px;
+}
+
+.h2sec3{
+    text-align: center;
+    font-size: 40px;
+    padding-top:80px;
+    font-weight: 900;
+}
+.linesec3{
+    background-color: rgb(199, 43, 64);
+    width: 110px;
+    height: 3px;
+    margin: auto;
+    margin-top: -25px;
+    margin-bottom: 20px;
+}
+.prt1sec3 , .prt2sec3{
+    overflow: auto;
+    float: left;
+    text-align: center;
+    margin-left: 100px;
+
+}
+
+.div1prt1sec3, .div2prt1sec3 , .div3prt1sec3 , .div4prt2sec3, .div5prt2sec3 , .div6prt2sec3{
+    width: 350px;
+    height: 250px;
+    float: left;
+    text-align: center;
+    margin-right: 50px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* فيه افتر و بيفور لكل ديف هنا  */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.img1sec3 , .img2sec3 , .img3sec3 , .img4sec3, .img5sec3, .img6sec3{
+    width: 330px;
+    height: 230px;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+.ovl1prt1sec3 , .ovl2prt1sec3 , .ovl3prt1sec3 , .ovl4prt2sec3 , .ovl5prt2sec3 ,.ovl6prt2sec3 {
+    width: 350px;
+    height: 250px;
+    float: left;
+ 
+    text-align: center;
+    margin-right: 50px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    position: absolute;
+    z-index: 1;
+    transition: 1s;
+    
+}
+
+.ovl1prt1sec3:hover , .ovl2prt1sec3:hover , .ovl3prt1sec3:hover, .ovl4prt2sec3:hover ,.ovl5prt2sec3:hover , .ovl6prt2sec3:hover{
+    opacity: 0.6;
+    transition: 1s;
+    background-color: rgba(0, 0, 0,0.5);
+}
+
+.ovl1img, .ovl2img, .ovl3img, .ovl4img, .ovl5img, .ovl6img {
+    width: 330px;
+    height: 230px;
+    margin-top: 20px;
+    border-radius: 25px;
+    position: absolute;
+    margin-left:10px ;
+    opacity: 0;
+    transition: 1s;
+    background-color: rgba(0, 0, 0,0.5);
+
+}
+.h3ovl1, .h3ovl2, .h3ovl3, .h3ovl4, .h3ovl5, .h3ovl6{
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(0, 75, 173);
+    opacity: 0;
+    transition: 1s;
+}
+
+.povl1, .povl2, .povl3, .povl4, .povl5, .povl6{
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    font-size: 20px;
+    font-weight: 800;
+    transition: 1s;
+    margin: -15px 15px 0px 15px;
+}
+.i1ovl1 , .i2ovl1, .i1ovl2 , .i2ovl2, .i1ovl3 , .i2ovl3, .i1ovl4 , .i2ovl4, .i1ovl5 , .i2ovl5, .i1ovl6 , .i2ovl6{
+    font-size: 30px;
+    margin: 10px 10px;
+    color: rgb(0, 25, 252);
+    background-color: rgb(116, 136, 223);
+    opacity: 0;
+    transition: 1s;
+}
+/* //////////////1111111111//////////// */
+.ovl1prt1sec3:hover  .h3ovl1 {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+
+}
+
+.ovl1prt1sec3:hover .povl1{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.div1prt1sec3:hover  .ovl1img{
+    opacity: 1;
+    transition: 1s;
+   visibility:visible;
+
+   
+
+}
+
+.div1prt1sec3:hover a  .i1ovl1{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.div1prt1sec3:hover .i2ovl1{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+/* ////////////222222222//////////////////////////// */
+.ovl2prt1sec3:hover  .h3ovl2 {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.ovl2prt1sec3:hover .povl2{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.div2prt1sec3:hover  .ovl2img{
+   visibility:visible;
+   opacity: 1;
+   transition: 1s;
+   
+
+}
+
+.div2prt1sec3:hover a  .i1ovl2{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.div2prt1sec3:hover .i2ovl2{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+
+}
+/* ///////////////////////333333333333////////////////////////////////////////////////// */
+.ovl3prt1sec3:hover  .h3ovl3 {
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+
+}
+
+.ovl3prt1sec3:hover .povl3{
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+}
+
+.div3prt1sec3:hover  .ovl3img{
+   background-color: black;
+   visibility:visible;
+    opacity: 1;
+    transition: 1s;
+   opacity: 0.6;
+   
+
+}
+
+.div3prt1sec3:hover a  .i1ovl3{
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+}
+
+.div3prt1sec3:hover .i2ovl3{
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+}
+/* /////////////////4444444444444444/////////////////////////////// */
+.ovl4prt2sec3:hover  .h3ovl4 {
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+
+}
+
+.ovl4prt2sec3:hover .povl4{
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+}
+
+.div4prt2sec3:hover  .ovl4img{
+   background-color: black;
+   visibility:visible;
+    opacity: 1;
+    transition: 1s;
+   opacity: 0.6;
+   
+
+}
+
+.div4prt2sec3:hover a  .i1ovl4{
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+}
+
+.div4prt2sec3:hover .i2ovl4{
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+}
+/* ///////////////555555555555/////////////////////////// */
+.ovl5prt2sec3:hover  .h3ovl5 {
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+
+}
+
+.ovl5prt2sec3:hover .povl5{
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+}
+
+.div5prt2sec3:hover  .ovl5img{
+   background-color: black;
+   visibility:visible;
+    opacity: 1;
+    transition: 1s;
+   opacity: 0.6;
+   
+
+}
+
+.div5prt2sec3:hover a  .i1ovl5{
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+}
+
+.div5prt2sec3:hover .i2ovl5{
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+}
+/* //////////////6666666666/////////////////////// */
+.ovl6prt2sec3:hover  .h3ovl6 {
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+
+}
+
+.ovl6prt2sec3:hover .povl6{
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+    opacity: 1;
+}
+
+.div6prt2sec3:hover  .ovl6img{
+   background-color: black;
+   visibility:visible;
+    opacity: 1;
+    transition: 1s;
+   opacity: 0.6;
+   
+
+}
+
+.div6prt2sec3:hover a  .i1ovl6{
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+}
+
+.div6prt2sec3:hover .i2ovl6{
+    visibility: visible;
+     opacity: 1;
+    transition: 1s;
+}
+/* /////////////sec444444///////////////// */
+.sec4{
+    width:100%;
+    background-color: rgb(175, 171, 171);
+    margin-top: -35px;
+}
+
+.h2sec4{
+    text-align: center;
+    font-size: 40px;
+    padding-top:80px;
+    font-weight: 900;
+}
+
+.linesec4{
+    background-color: rgb(199, 43, 64);
+    width: 110px;
+    height: 3px;
+    margin: auto;
+    margin-top: -25px;
+    margin-bottom: 65px;
+}
+
+.prt1sec4{
+    overflow:auto;
+    margin-bottom: 65px;
+    margin-left: 90px;
+
+}
+
+.div1sec4{
+    width: 350px;
+    height: 200px;
+    border: 1px solid black;
+    float: left;
+    border-radius: 20px;
+    position: relative;
+}
+
+.div1sec4::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top:0;
+    right: 0;
+    opacity: 0;
+    background-color: rgb(88, 81, 81);
+    transition: 0.6s;
+
+}
+
+.div1sec4:hover::after{
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+.div1sec4::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom:0;
+    left: 0;
+    opacity: 0;
+    background-color: rgb(45, 65, 75);
+    transition: 0.6s;
+
+}
+
+.div1sec4:hover::before{
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    border-radius: 20px;
+}
+
+.div2sec4{
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid black;
+    float: left;
+    margin: 0px 50px;
+    position: relative;
+}
+.div2sec4::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top:0;
+    right: 0;
+    opacity: 0;
+    background-color: rgb(88, 81, 81);
+    transition: 0.6s;
+
+}
+
+.div2sec4:hover::after{
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+.div2sec4::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom:0;
+    left: 0;
+    opacity: 0;
+    background-color: rgb(45, 65, 75);
+    transition: 0.6s;
+
+}
+
+.div2sec4:hover::before{
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    border-radius: 20px;
+}
+
+.prt2sec4{
+    overflow:auto;
+    margin-bottom: 35px;
+    margin-left: 90px;
+
+}
+.icnsec4{
+    font-size: 45px;
+    font-weight: 900;
+    float: left;
+    margin-left: 30px;
+    color: rgb(79, 161, 199);
+
+}
+
+.h3sec4{
+    font-size: 25px;
+    margin: 8px 0 0 85px;
+    transition: 1s;
+    text-decoration: overline;
+    
+    
+}
+
+.div2sec4:hover .h3sec4{
+    color: #eee;
+    transition: 1s;
+}
+
+.div1sec4:hover .h3sec4{
+    color: #eee;
+    transition: 1s;
+}
+
+.psec4{
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 27px;
+    word-spacing: 4px;
+    font-size: 18px;
+    color:rgb(82, 81, 81) ;
+}
+
+.sec5{
+    width:100%;
+    background-color: rgb(175, 171, 171);
+    margin-top: -35px;
+    padding-bottom: 150px;
+}
+.prntt{
+ overflow: auto;
+}
+.cont{
+    padding-top: 100px;
+    margin-left: 150px;
+    font-size: 26px;
+    float: left;
+    width: 500px;
+}
+
+.h2sec5{
+    color: rgb(0, 95, 150);
+}
+
+.linesec5{
+    margin-left: 70px;
+    width: 110px;
+    margin-top: -20px;
+    height: 3px;
+    background-color: rgb(196, 25, 25);
+}
+.imgsec55{
+    float: right;
+    padding-top: 100px;
+    border-radius: 50px;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.ulimg{
+    margin: auto;
+    list-style: none;
+    margin-left: 100px;
+}
+.ulimg li{
+    float: left;
+    margin-left: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(80, 79, 79);
+}
+
+.ulimg li:hover{
+    background-color: rgb(122, 166, 202);
+    cursor: pointer;
+}
+.p2sec5{
+    color: rgb(75, 74, 74);
+    font-weight: 100;
+}
+
+.spsec5{
+    line-height: 40px;
+    color: rgb(116, 113, 113);
+    font-weight: 100;
+    
+}
+
+.sps{
+    color: rgb(106, 160, 211);
+}
+
+.sec6{
+    width:100%;
+    background-color: rgb(175, 171, 171);
+    background-image: url(../images/maigrir-vite-sans-régime-sans-sport-niaque-gain-vitesse-reussir-success.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 350px;
+    margin: auto;
+    line-height: 250px;
+}
+.prntsec6{
+    background-color: rgba(94, 91, 91, 0.5);
+    height: 350px;
+    margin: auto;
+
+}
+
+.contsec6{
+    float: left;
+    text-align: center;
+    line-height: 10px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-left: 120px;
+    margin-top: 90px;
+    
+}
+
+.icont6{
+    color: rgb(76, 133, 219);
+    font-size:36px ;
+}
+
+.pcont6{
+    color: rgb(206, 204, 202);
+    font-size:18px ;
+    font-weight: 200;
+}
+
+.sec7{
+    width:100%;
+    background-color: rgb(175, 171, 171);
+    margin-top: -35px;
+    padding-bottom: 100px;
+}
+
+.parentsec7{
+    /* background-color: rgb(176, 224, 224);
+    margin: auto;
+    width: 1200px;
+    height: 450px; */
+    overflow: auto;
+}
+.divsec7{
+    background-color: rgb(169, 173, 173);
+    border: 2px solid rgb(38, 6, 223);
+    width: 300px;
+    height: 350px;
+    position: relative;
+    border-radius: 25px;
+    float: left;
+    text-align: center;
+    margin-left:100px  ;
+    /* line-height: 30px; */
+
+}
+.h2Divsec7{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.Ddivsec7{
+    border: 1px solid rgb(19, 22, 219) ;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.circl7{
+    margin-top:15px ;
+}
+
+.p1Divsec7 , .p2Divsec7 , .p3Divsec7{
+    font-weight: 300;
+    margin-top:20px ;
+}
+.buttonDivsec7{
+    background-color:rgb(176, 185, 185) ;
+    color:rgb(19, 22, 219) ;
+    border-radius: 7px;
+    border: 1px solid rgb(19, 22, 219)  ;
+    cursor: pointer;
+}
+
+.divsec7::after{
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    transition: 1s;
+    opacity: 0;
+    background-color: rgba(41, 40, 40,0.5);
+    border-radius: 25px;
+}
+
+.divsec7:hover::after{
+    opacity: 0.6;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.sec8{
+    width:100%;
+    background-color: rgb(175, 171, 171);
+    background-image: url(../images/grandsport8.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+    margin: auto;
+}
+
+.parsec8{
+    background-color: rgba(0, 0, 0, 0.541);
+    height: 300px;
+    margin: auto;
+}
+
+.divsec8{
+    width: 400px;
+    float: left;
+    margin-left: 200px;
+    margin-top: 75px;
+    color: #eee;
+}
+
+.imgsec8{
+    border-radius: 50%;
+    float: left;
+}
+
+.h4sec8{
+    margin-top: -20px;
+    margin-left: 113px;
+    color: rgb(74, 125, 201);
+}
+
+.psec8{
+    margin-top: 50px;
+}
+
+.sec9{
+    width:100%;
+    background-color: rgb(175, 171, 171);
+    margin: auto;
+    margin-top: -35px;
+    padding-bottom: 70px;
+
+}
+
+.parentsec9{
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    
+}
+
+.divsec9{
+    width: 30%;
+    height: 300px;
+    background-color: rgb(161, 153, 153);
+    float: left;
+    padding: 14px 18px;
+    text-align: center;
+    position: relative;
+    border-radius: 18px;
+    
+  
+}
+
+.divimgsec9{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.imgsec9{
+    width: 100%;
+    border-radius: 50%;
+    
+}
+
+.csec9{
+    margin: 0 5%;
+}
+
+.ovlsec9{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+    opacity: 0;
+    border-radius: 50%;
+    transition: 1s;
+
+}
+
+.ovlsec9  a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(53, 171, 240);
+    color: rgb(253, 253, 253);
+    font-size: 24px;
+    line-height: 40px;
+    margin-left: auto;
+}
+
+.spinfosec9{
+    color: rgb(44, 44, 44);
+    font-size: 20px;
+}
+
+.divsec9:hover  .ovlsec9 {
+    opacity: 1;
+    transition: 1s;
+}
+
+.divsec9::after{
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    transition: 1s;
+    border-radius: 18px;
+    opacity: 0;
+    background-color: rgba(37, 36, 36, 0.5);
+}
+
+.divsec9:hover::after{
+    opacity: 0.6;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.sec10{
+    width:100%;
+    background-color: rgb(175, 171, 171);
+    margin: auto;
+    margin-top: -35px;
+    
+}
+
+.parntsec10{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    
+}
+
+
+.contsec10{
+    width: 30%;
+    height: 100%;
+    float: left;
+    position: relative;
+
+}
+.contsec10::after{
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    transition: 1s;
+    opacity: 0;
+    background-color: rgba(37, 36, 36, 0.5);
+}
+
+.contsec10:hover::after{
+    opacity: 0.6;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+.setsec10{
+    margin-left: 15px;
+}
+
+.centersec10{
+    margin: 0 5%;
+}
+
+.spsec10{
+    margin-right: 15px;
+    color: rgb(80, 77, 77);
+}
+
+.isec10{
+    color: rgb(66, 127, 184);
+}
+
+.spsec10 , .isec10{
+    font-size: 14px;
+}
+
+.h3sec10{
+    font-size: 20px;
+}
+
+.psec10{
+    color: rgb(92, 90, 90);
+    letter-spacing: 3px;
+}
+
+.asec10{
+    text-decoration: none;
+}
+
+.footer{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(51, 50, 49);
+}
+
+.contfooter{
+    margin: auto;
+    text-align: center;
+    padding-top:4%;
+}
+
+.ifooter{
+    font-size: 36px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    color: #0aadee;
+    margin-top: 15px;
+    /* background-color: blue; */
+}
+
+.contfooter a{
+    /* background-color: #edf0f1; */
+    width: 60px;
+    border-radius: 100%;
+    text-decoration: none;
+}
+
+.pfooter{
+    color: #999696;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
